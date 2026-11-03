@@ -643,6 +643,7 @@ class T(unittest.TestCase):
         asyncio.run(go())
 
     def test_text_selection_everywhere_but_tabs(self):
+        theme.apply("light", ui, graph); self.addCleanup(theme.apply, theme.saved(), ui, graph)  # colours below are the light palette, whatever theme this Mac saved
         async def go():
             async with ui.Dashboard().run_test(size=(160, 64)) as pilot:
                 q = pilot.app.query_one
