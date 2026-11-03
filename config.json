@@ -1,0 +1,22 @@
+{
+  "owner": "Cole Roberts",
+  "owner_email": "you@example.com",
+  "repos_dir": "~/code",
+  "teams_chats": [
+    "Project Alpha",
+    "Team - Platform"
+  ],
+  "jira_jql": "assignee = currentUser() AND statusCategory != Done ORDER BY updated DESC",
+  "interval_seconds": {
+    "JIRABrain": 180,
+    "OutlookBrain": 900,
+    "TeamsBrain": 150,
+    "RoamBrain": 150,
+    "GitHubBrain": 120,
+    "CodeBrain": 150
+  },
+  "min_gap_seconds": 600,
+  "teams_browser_port": 9333,
+  "credentials_env": "state/credentials.env",
+  "jira_url": "https://your-site.atlassian.net"
+}

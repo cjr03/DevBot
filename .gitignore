@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+logs/*
+!logs/.keep
+state/*
+!state/.keep
+dashboard.svg
+state/teams-chrome/
+.playwright-mcp/
+state/playwright/
+.DS_Store
